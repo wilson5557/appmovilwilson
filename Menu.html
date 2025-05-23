@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEÑOR MILONGAS</title>
+    
+    <link rel="stylesheet" href="Menu.css">
+    <script src="Menu.js" defer></script>
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <div class="logo">
+                <p>SEÑOR<span>MILONGAS</span></p>
+            </div>
+        </header>
+        <div id="preparation-time-banner" style="display: none; background-color: #333; color: white; padding: 10px; text-align: center; position: fixed; top: 0; width: 100%; z-index: 1000;">Tiempo estimado para tu pedido: <span id="preparation-time"></span></div>
+        <aside class="presentacion">
+            <div class="informacion">
+                <h1>Ordena tu comida o bebida favorita</h1>
+                <div>
+                    <h2>Nuestra deliciosa comida y bebidas están esperando por ti. Aquí verás una pequeña seleccion de exquisitos platos y sabrosos cocteles de renombre</h2>
+                </div>
+            </div>
+            <div class="presentacion--imagen">
+                <img src="https://i.blogs.es/c2e20f/cocteles/450_1000.jpg" alt="Imagen presentacion">
+            </div>
+        </aside>
+        <main class="comida">
+            <h2 class="comida--titulo">Bebidas populares</h2>
+            <div class="platos">
+                <article class="plato">
+                    <img src="Imagenes/Mojito-PNG-Photo-Image.png" alt="Mojito" class="small-image">
+                    <h1>Long Island</h1>
+                    <p>El Long Island es un cóctel popular originario de New Jersey, EE.UU., que se compone de ron, limón, azúcar (tradicionalmente jugo de caña de azúcar), menta o hierbabuena, vodka, y refresco negro. 
+                        Se caracteriza por su sabor refrescante y es muy apreciado en climas cálidos.</p>
+                    <div class="plato--info">
+                        <p>$3.99</p>
+                        <button type="button" onclick="showPreparationTime('bebida')">+</button>
+                    </div> 
+                </article>
+                <article class="plato">
+                    <img src="Imagenes/espresso-martini-a-chic-martini-glass-with-dark-brown-liquid-coffee-beans-and-frothy-top-png.webp" alt="Martini" class="small-image">
+                    <h1>Martini</h1>
+                    <p>El Martini es un cóctel elaborado con vodka, limonaday aceitunas. Es una bebida popular que a menudo se sirve como bebida después de la cena para relajarse.</p>
+                    <div class="plato--info">
+                        <p>$5.99</p>
+                        <button type="button" onclick="showPreparationTime('bebida')">+</button>
+                    </div>                    
+                </article>
+                <article class="plato">
+                    <img src="Imagenes/bm.webp" alt="BM" class="small-image">
+                    <h1>Bloody Mary</h1>
+                    <p>El Bloody Mary es un cóctel que generalmente se prepara con vodka y jugo de tomate, sazonado con diversos ingredientes como salsa Worcestershire, salsa Tabasco, sal, pimienta negra y otros condimentos como el apio. Su combinación de sabores le da un toque refrescante y ligeramente picante, ideal como bebida para el brunch.</p>
+                    <div class="plato--info">
+                        <p>$6.99</p>
+                        <button type="button" onclick="showPreparationTime('bebida')">+</button>
+                    </div>                    
+                </article>
+                <article class="plato">
+                    <img src="Imagenes/cocktail-yamazaki-radelaide-rob-roy.png" alt="RR" class="small-image">
+                    <h1>Rob Roy Escocés</h1>
+                    <p>El Rob Roy es un cóctel que se originó en 1894 y es una variante del clásico Manhattan, utilizando whisky escocés en lugar de bourbon o whisky de centeno. Su preparación consiste en mezclar whisky y vermut, generalmente en partes iguales, y se sirve en una copa.</p>
+                    <div class="plato--info">
+                        <p>$10.99</p>
+                        <button type="button" onclick="showPreparationTime('bebida')">+</button>
+                    </div>                    
+                </article>
+            </div>
+            <h2 class="comida--titulo">Comidas populares</h2>
+            <div class="platos">
+                <article class="plato">
+                    <img src="Imagenes/pngtree-stewed-lamb-and-rice-on-a-white-plate-isolated-clean-background-png-image_14657893.png" alt="Cordero Guisado" class="small-image">
+                    <h1>Cordero Guisado</h1>
+                    <p>El cordero guisado es un plato tradicional que se cocina lentamente, combinando carne de cordero con una variedad de especias, vegetales y vino. Es una comida rica y reconfortante, ideal para los días más fríos.</p>
+                    <div class="plato--info">
+                        <p>$12.99</p>
+                        <button type="button" onclick="showPreparationTime('comida')">+</button>
+                    </div> 
+                </article>
+                <article class="plato">
+                    <img src="Imagenes/medallones-rebozados-web.png" alt="Medallones de Pollo" class="small-image">
+                    <h1>Medallones de Pollo</h1>
+                    <p>Los medallones de pollo son pequeños filetes de pollo, marinados y asados a la perfección. A menudo se sirven con una salsa ligera y acompañados de vegetales frescos.</p>
+                    <div class="plato--info">
+                        <p>$8.99</p>
+                        <button type="button" onclick="showPreparationTime('comida')">+</button>
+                    </div>                    
+                </article>
+                <article class="plato">
+                    <img src="Imagenes/pngtree-tournedos-rossini-with-cocotte-potatoes-beef-perigord-cookery-png-image_13201829.png" alt="Tournedo Rossini" class="small-image">
+                    <h1>Tournedo Rossini</h1>
+                    <p>El Tournedo Rossini es un plato gourmet francés que consiste en un filete de ternera acompañado de foie gras, trufas y una rica salsa de vino. Es un verdadero placer para los amantes de la alta cocina.</p>
+                    <div class="plato--info">
+                        <p>$24.99</p>
+                        <button type="button" onclick="showPreparationTime('comida')">+</button>
+                    </div>                    
+                </article>
+                <article class="plato">
+                    <img src="Imagenes/somc.png" alt="Sopa de Marisco" class="small-image">
+                    <h1>Sopa de Marisco</h1>
+                    <p>La sopa de marisco es una sopa rica y sabrosa que se prepara con una variedad de mariscos frescos, vegetales y especias. Es un plato perfecto para disfrutar del sabor del mar en cada cucharada.</p>
+                    <div class="plato--info">
+                        <p>$15.99</p>
+                        <button type="button" onclick="showPreparationTime('comida')">+</button>
+                    </div>                    
+                </article>
+            </div>
+            <div class="cart"></div>
+            <button class="complete-purchase">Completar compra</button>
+        </main>
+        <button id="toggle-receipt-list">Mostrar/Ocultar Facturas</button>
+        <div id="receipt-list-container" style="display: none;">
+            <ul id="receipt-list"></ul>
+        </div>
+    </div>
+    <div id="receipt-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Recibo</h2>
+            <div id="receipt-content"></div>
+        </div>
+    </div>
+</body>
+</html>
+    
